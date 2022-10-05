@@ -1,0 +1,658 @@
+@font-face {
+  font-family: adlinaka-bold;
+  src: url(./assets/font/ADLINNAKA-BOLDDEMO.TTF);
+}
+
+@font-face {
+  font-family: isidora-black-italic;
+  src: url(./assets/font/IsidoraSansAlt-BlackItalic.ttf);
+}
+
+:root {
+  --card-color: #ef4b24;
+  --text-color: #ffffff;
+
+  --nav-text-color: #ef4b24;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: adlinaka-bold;
+  overflow-x: hidden;
+}
+
+html {
+  background-image: url(./assets/background/background.webp);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* @@@@@ NAVBAR @@@@@ */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 6vw;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0 5px 12px -4px black;
+  z-index: 9999;
+}
+
+.inner-nav {
+  width: 1400px;
+  /* width: 100%; */
+  display: flex;
+  margin: 0 auto;
+}
+
+.topleft-nav,
+.topright-nav {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.topright-nav li,
+.topleft-nav li {
+  transition: 0.5s;
+}
+
+.topright-nav li:hover,
+.topleft-nav li:hover {
+  transform: scale(1.1);
+}
+
+.topleft-nav li a,
+.topright-nav li a {
+  position: relative;
+  color: var(--nav-text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(1rem + 0.2vw);
+  font-weight: bold;
+}
+
+.brand-logo {
+  width: 9vw;
+}
+
+.brand-logo img {
+  width: 100%;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* Welcome page */
+main {
+  margin-top: 10vw;
+}
+
+.display-flex-reverse {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+}
+
+.orange-bg {
+  background-color: var(--card-color);
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.welcome-text {
+  position: relative;
+  width: 52%;
+  height: 20%;
+  text-align: left;
+  padding-top: 2vw;
+  line-height: 0.2rem;
+  margin-bottom: 15vw;
+}
+
+.welcome-text h2 {
+  font-size: 2.2rem;
+}
+
+.welcome-text h1 {
+  font-size: 3.5rem;
+  margin-top: -0.2vw;
+  line-height: normal;
+}
+
+.welcome-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.welcome-img {
+  position: absolute;
+  width: 70%;
+  left: -12vw;
+  bottom: -4vw;
+}
+
+.welcome-img img {
+  width: 100%;
+}
+
+.whatsapp-btn {
+  position: relative;
+  float: right;
+  top: 5vw;
+  width: fit-content;
+  border-radius: 30px 0 0 30px;
+  background: #ffffff;
+  color: var(--nav-text-color);
+  font-size: calc(1rem + 1vw);
+  padding: 1.5rem;
+  margin: 0 2vw;
+  transition: all 0.5s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 12px -4px black;
+}
+/* End of Welcome page */
+
+/* About Us page */
+.white-line {
+  width: 100%;
+  height: 3vw;
+  background-color: #ffffff;
+}
+
+.about-us-title {
+  width: 100%;
+  background-color: var(--card-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.orange-line {
+  width: 100%;
+  background-color: var(--card-color);
+  height: 3vw;
+}
+
+.about-us-sub {
+  text-align: center;
+  padding: 3vw 15vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+/* End of About Us page */
+
+/* Reason Page */
+.orange-card {
+  position: relative;
+  max-width: 80%;
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 20vw;
+  margin-bottom: 10vw;
+  background-color: var(--card-color);
+  border-radius: 10vw 10vw 0 0;
+}
+
+.card-title {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto;
+  top: calc(-4rem - 8vw);
+  font-size: calc(1.5rem + 2.5vw);
+  letter-spacing: -0.2rem;
+  font-family: isidora-black-italic;
+  text-align: left;
+  -webkit-text-stroke: 2px #d47241;
+  text-shadow: -0.5vw 0.2vw #e05f5f, 0vw 0.5vw 1.5vw #000000;
+  transform: rotate(-2deg);
+  color: #ffffff;
+}
+
+.card-content ol {
+  margin: 0 auto;
+  margin-top: -20vmin;
+  padding: 0 10vw 0 8vw;
+  display: table;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.card-content ol li {
+  padding-bottom: 2vw;
+}
+
+.footer-logo {
+  margin-top: -4vw;
+  width: 100%;
+  position: relative;
+  top: 4vw;
+  right: -4vw;
+  display: flex;
+  justify-content: end;
+}
+
+.footer-logo img {
+  width: 20%;
+}
+/* End of Reason Page */
+
+/* Partnership */
+.rounded-bottom-card {
+  border-radius: 0 0 3vw 3vw;
+}
+.card-content h1 {
+  padding-top: 2vw;
+  font-size: 4rem;
+}
+.card-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4vw;
+  padding-bottom: 3vw;
+}
+
+.img-wrapper img {
+  max-width: 30%;
+  width: 300px;
+}
+/* End of Partnership */
+
+/* Best Menu */
+.redline-bg {
+  background-image: url(./assets/background/red-bg.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+
+.display-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.display-flex img {
+  width: 30%;
+  padding-bottom: 5vw;
+}
+
+.best-seller {
+  background-color: #ffffff;
+  width: 40%;
+  padding: 0 2vw;
+  padding-top: 2vw;
+  border-radius: 0 0 5vw 5vw;
+}
+/* End of Best Menu */
+
+/* @@@@@ Tablet @@@@@ */
+@media only screen and (max-width: 834px) {
+  /* @@@@@ NAVBAR @@@@@ */
+  .topleft-nav li a,
+  .topright-nav li a {
+    font-size: 0.7rem;
+  }
+
+  .brand-logo {
+    width: 10vw;
+  }
+
+  .brand-logo img {
+    width: 100%;
+  }
+  /* End of Nav */
+
+  /* Welcome page */
+  main {
+    margin-top: 15vw;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .welcome-text {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-top: 2vw;
+    line-height: 0.2rem;
+    margin-bottom: 0;
+  }
+
+  .welcome-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .welcome-text h1 {
+    font-size: calc(3.2rem);
+    line-height: 3.5rem;
+  }
+
+  .welcome-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .welcome-img {
+    position: relative;
+    margin: 0 auto;
+    left: inherit;
+    right: 10vw;
+    width: 120%;
+    bottom: -7vw;
+  }
+
+  .welcome-img img {
+    width: 100%;
+  }
+
+  .whatsapp-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: inherit;
+    bottom: -50vw;
+    border-radius: 0 0 0 0;
+    font-size: 2rem;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  /* End of Welcome Page */
+
+  /* About Us Page */
+  .about-us-sub {
+    font-size: 1.5rem;
+    padding: auto 8vw;
+  }
+  /* End of About Us Page */
+
+  /* Reason Page */
+  .orange-card {
+    max-width: 85%;
+    margin-top: 25vw;
+  }
+
+  .card-title {
+    font-size: calc(1.5rem + 2vw);
+    letter-spacing: -0.2rem;
+    top: -19vmin;
+  }
+
+  .card-content ol {
+    margin: 0 auto;
+    margin-top: -20vmin;
+    padding: 0 10vw 0 8vw;
+    display: table;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  .card-content ol li {
+    padding-bottom: 2vw;
+  }
+
+  .footer-logo {
+    top: 5vw;
+    right: -5vw;
+  }
+  /* End of Reason Page */
+
+  /* Partnership */
+  .card-content h1 {
+    font-size: 3rem;
+  }
+  .card-content p {
+    font-size: 1.5rem;
+  }
+
+  .img-wrapper img {
+    width: 200px;
+  }
+  /* End of Partnership */
+}
+
+/* @@@@@ Mobile @@@@@ */
+@media only screen and (max-width: 576px) {
+  /* @@@@@ NAVBAR @@@@@ */
+  nav {
+    height: 64px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 12px -4px black;
+  }
+
+  .inner-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .hamburger-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    cursor: pointer;
+    justify-content: space-between;
+    margin: auto 5vw;
+    z-index: 9999;
+  }
+
+  .hamburger-menu input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -10px;
+    top: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hamburger-menu span {
+    /* display: block; */
+    width: 28px;
+    height: 3px;
+    background-color: #ef4b24;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+
+  /* hamburger animation */
+  .hamburger-menu span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+
+  .hamburger-menu span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+
+  .hamburger-menu input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .hamburger-menu input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .hamburger-menu input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+
+  nav ul {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    transform: translatey(-200%);
+    z-index: -1;
+    transition: all 0.8s ease-in-out;
+  }
+
+  nav ul.open {
+    transform: translateY(0);
+  }
+
+  .topleft-nav {
+    width: 100%;
+    top: 40px;
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+  }
+
+  .topright-nav {
+    padding-bottom: 25vh;
+    width: 100%;
+    top: 50vh;
+    z-index: -1;
+  }
+
+  /* brand logo */
+  .brand-logo {
+    width: 92px;
+    position: relative;
+    top: -0.1vw;
+    left: -0.2vw;
+  }
+
+  .brand-logo img {
+    width: 100%;
+  }
+
+  /* Welcome page */
+  main {
+    margin-top: 7rem;
+  }
+
+  .welcome-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  .topleft-nav li {
+    margin-top: 4vw;
+  }
+  .topright-nav li {
+    margin-bottom: 4vw;
+  }
+  /* End of Welcome Page */
+
+  /* About Us page */
+  .orange-line {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .about-us-sub {
+    font-size: 1rem;
+  }
+  /* End of About Us page */
+
+  /* Reason Page */
+
+  .card-title {
+    font-size: calc(0.1rem + 5vw);
+    letter-spacing: normal;
+    top: -15vmin;
+  }
+
+  .card-content ol {
+    margin-top: -15vmin;
+    font-size: 0.8rem;
+  }
+  /* End of Reason Page */
+
+  /* Partnership */
+
+  .card-content h1 {
+    font-size: 2rem;
+  }
+  .card-content p {
+    font-size: 1rem;
+    width: fit-content;
+    padding-bottom: 2vw;
+    padding: 0 5vw;
+    margin-bottom: 5vw;
+  }
+  /* End of Partnership */
+
+  /* Best Menu */
+  .display-flex {
+    flex-direction: column-reverse;
+    margin-top: 10vw;
+  }
+
+  .display-flex img {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  .best-seller {
+    width: 50%;
+    padding: 0 2vw;
+    border-radius: 0 0 5vw 5vw;
+  }
+  /* End of Best Menu */
+}
