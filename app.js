@@ -1,28 +1,25 @@
 const menuToggle = document.querySelector(".hamburger-menu input");
-const topleftNav = document.querySelector(".topleft-nav");
-const toprightNav = document.querySelector(".topright-nav");
+const navbar = document.querySelectorAll(".inner-nav ul");
+const navlist = document.querySelectorAll(".inner-nav li");
 const checkBox = document.querySelector(".checkbox");
-const topLeftNavUl = document.getElementById("nav1");
-const topRightNavUl = document.getElementById("nav2");
 const carousel = document.querySelectorAll(".swiper-slide");
 var slidenum = 0;
 
 // mobile menu
 menuToggle.addEventListener("click", function () {
-  topleftNav.classList.toggle("open");
-  toprightNav.classList.toggle("open");
+  for (j = 0; j < navbar.length; j++) {
+    navbar[j].classList.toggle("open");
+  }
 });
 
-topLeftNavUl.addEventListener("click", function () {
-  toprightNav.classList.remove("open");
-  topleftNav.classList.remove("open");
-  checkBox.checked = false;
-});
-topRightNavUl.addEventListener("click", function () {
-  toprightNav.classList.remove("open");
-  topleftNav.classList.remove("open");
-  checkBox.checked = false;
-});
+for (i = 0; i < navlist.length; i++) {
+  navlist[i].addEventListener("click", function () {
+    for (j = 0; j < navbar.length; j++) {
+      navbar[j].classList.remove("open");
+    }
+    checkBox.checked = false;
+  });
+}
 
 // carousel algorithm
 var playSlider;
@@ -72,6 +69,43 @@ const swiper = new Swiper(".swiper", {
   // pagination: {
   //   el: '.swiper-pagination',
   // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+const swiper2 = new Swiper(".swiper-2", {
+  speed: 1000,
+  centeredSlides: true,
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  // breakpoints: {
+  //   // when window width is >= 576px
+  //   100: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 10,
+  //   },
+  //   835: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 50,
+  //   },
+  // },
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 
   // Navigation arrows
   navigation: {

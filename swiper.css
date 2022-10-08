@@ -3,14 +3,14 @@
   height: fit-content;
 }
 
-.swiper-slide img {
-  margin-bottom: 1vw;
+.box-shadow img {
   margin-top: 2vw;
   width: 100%;
   box-shadow: 0px 0px 12px 0px black;
 }
 
-.swiper img:hover {
+.swiper img:hover,
+.swiper-2 img:hover {
   transform: scale(104%);
   transition: all 0.5s ease;
 }
@@ -29,8 +29,30 @@
   transition: all 0.2s ease-in-out;
 }
 
+.swiper-2 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0px;
+  z-index: 1;
+  max-width: 45%;
+  width: 600px;
+}
+
+.swiper-slide img {
+  margin-top: 2vw;
+  width: 100%;
+}
+
 @media only screen and (max-width: 834px) {
   .swiper-slide img {
     width: 85%;
+  }
+
+  .swiper-2 {
+    max-width: 45%;
+    width: 1000px;
   }
 }
