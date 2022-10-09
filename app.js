@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", init);
 function init() {
   setTimeout(() => {
     loading.classList.toggle("close");
-  }, 2600);
+  }, 3000);
   setTimeout(() => {
     html.classList.remove("loading");
-  }, 2900);
+  }, 3200);
 
   setTimeout(() => {
     loading.remove();
