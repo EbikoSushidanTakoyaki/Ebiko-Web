@@ -17,6 +17,10 @@ function init() {
   setTimeout(() => {
     html.classList.remove("loading");
   }, 2900);
+
+  setTimeout(() => {
+    loading.remove();
+  }, 3500);
 }
 
 // onload = function () {
