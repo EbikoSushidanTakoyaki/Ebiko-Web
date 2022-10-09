@@ -6,16 +6,27 @@ const carousel = document.querySelectorAll(".swiper-slide");
 const loading = document.getElementById("loader-wrapper");
 const html = document.querySelector("html");
 var slidenum = 0;
-
+const loadingDuration = document.getElementById("loading").duration * 1000;
 // loading screen
-onload = function () {
+document.addEventListener("DOMContentLoaded", init);
+function init() {
+  console.log(loadingDuration);
   setTimeout(() => {
-    loading.classList.toggle("open");
-  }, 4000);
+    loading.classList.toggle("close");
+  }, 2600);
   setTimeout(() => {
     html.classList.remove("loading");
-  }, 4100);
-};
+  }, 2900);
+}
+
+// onload = function () {
+//   setTimeout(() => {
+//     loading.classList.toggle("open");
+//   }, 4000);
+//   setTimeout(() => {
+//     html.classList.remove("loading");
+//   }, 4100);
+// };
 
 // mobile menu
 menuToggle.addEventListener("click", function () {

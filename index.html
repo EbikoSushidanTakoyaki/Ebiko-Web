@@ -15,7 +15,7 @@
   
   <body>
     <div class="loader-wrapper" id="loader-wrapper">
-      <video autoplay loop muted plays-inline>
+      <video autoplay loop muted plays-inline preload="metadata" id="loading">
         <source src="./assets/loading/Intro.mp4" type="video/mp4">
       </video>
     </div>
@@ -321,6 +321,6 @@
         </ol>
       </div>
     </div>
-    <script src="app.js"></script>
+    <script src="app.js" defer type="text/javascript"></script>
   </body>
 </html>
