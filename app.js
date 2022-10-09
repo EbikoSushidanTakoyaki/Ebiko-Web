@@ -3,7 +3,17 @@ const navbar = document.querySelectorAll(".inner-nav ul");
 const navlist = document.querySelectorAll(".inner-nav li");
 const checkBox = document.querySelector(".checkbox");
 const carousel = document.querySelectorAll(".swiper-slide");
+const loading = document.getElementById("loader-wrapper");
+const html = document.querySelector("html");
 var slidenum = 0;
+
+// loading screen
+onload = function () {
+  setTimeout(() => {
+    loading.classList.toggle("open");
+    html.classList.remove("loading");
+  }, 4000);
+};
 
 // mobile menu
 menuToggle.addEventListener("click", function () {

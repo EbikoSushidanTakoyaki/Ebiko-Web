@@ -43,6 +43,7 @@ html {
   background-size: cover;
   scroll-behavior: smooth;
   background-attachment: fixed;
+  transition: all 1s ease;
 }
 
 body {
@@ -50,6 +51,26 @@ body {
   font-size: 16px;
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
+}
+
+html.loading {
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  display: flex;
+  background: black;
+  z-index: 99999999;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.loader-wrapper.open {
+  opacity: 0;
 }
 
 /* @@@@@ NAVBAR @@@@@ */
@@ -61,7 +82,7 @@ nav {
   display: flex;
   background-color: #ffffff;
   box-shadow: 0 5px 12px -4px black;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .inner-nav {
