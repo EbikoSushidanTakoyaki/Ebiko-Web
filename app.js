@@ -9,28 +9,31 @@ const loadingDuration = document.getElementById("loading").duration * 1000;
 // loading
 const loading = document.getElementById("loader-wrapper");
 const html = document.querySelector("html");
-document.addEventListener("DOMContentLoaded", init);
-function init() {
+// document.addEventListener("DOMContentLoaded", init);
+// function init() {
+//   setTimeout(() => {
+//     loading.classList.toggle("close");
+//   }, 3000);
+//   setTimeout(() => {
+//     html.classList.remove("loading");
+//   }, 3200);
+
+//   setTimeout(() => {
+//     loading.remove();
+//   }, 3500);
+// }
+
+onload = function () {
   setTimeout(() => {
     loading.classList.toggle("close");
   }, 3000);
   setTimeout(() => {
     html.classList.remove("loading");
   }, 3200);
-
   setTimeout(() => {
     loading.remove();
   }, 3500);
-}
-
-// onload = function () {
-//   setTimeout(() => {
-//     loading.classList.toggle("open");
-//   }, 4000);
-//   setTimeout(() => {
-//     html.classList.remove("loading");
-//   }, 4100);
-// };
+};
 
 // mobile menu
 menuToggle.addEventListener("click", function () {
