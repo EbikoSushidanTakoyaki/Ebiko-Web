@@ -43,7 +43,6 @@ html {
   background-size: cover;
   scroll-behavior: smooth;
   background-attachment: fixed;
-  transition: all 1s ease;
 }
 
 body {
@@ -58,15 +57,19 @@ html.loading {
 }
 
 .loader-wrapper {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: fixed;
   justify-content: center;
   display: flex;
-  background: black;
+  background-color: black;
   z-index: 99999999;
   opacity: 1;
   transition: all 0.5s ease;
+}
+
+.loader-wrapper video {
+  width: 50%;
 }
 
 .loader-wrapper.open {
