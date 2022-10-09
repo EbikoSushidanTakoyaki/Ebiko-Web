@@ -11,10 +11,10 @@ var slidenum = 0;
 onload = function () {
   setTimeout(() => {
     loading.classList.toggle("open");
-  }, 3500);
+  }, 4000);
   setTimeout(() => {
     html.classList.remove("loading");
-  }, 3750);
+  }, 4100);
 };
 
 // mobile menu
