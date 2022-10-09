@@ -3,14 +3,14 @@ const navbar = document.querySelectorAll(".inner-nav ul");
 const navlist = document.querySelectorAll(".inner-nav li");
 const checkBox = document.querySelector(".checkbox");
 const carousel = document.querySelectorAll(".swiper-slide");
-const loading = document.getElementById("loader-wrapper");
-const html = document.querySelector("html");
 var slidenum = 0;
 const loadingDuration = document.getElementById("loading").duration * 1000;
-// loading screen
+
+// loading
+const loading = document.getElementById("loader-wrapper");
+const html = document.querySelector("html");
 document.addEventListener("DOMContentLoaded", init);
 function init() {
-  console.log(loadingDuration);
   setTimeout(() => {
     loading.classList.toggle("close");
   }, 2600);
