@@ -1075,6 +1075,7 @@ ol {
   /* Requirement */
   .container-title h1 {
     font-size: 9vw;
+    margin: 5vw;
   }
 
   .text-flex {

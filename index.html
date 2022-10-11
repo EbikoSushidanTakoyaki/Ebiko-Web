@@ -1,326 +1,325 @@
 <!DOCTYPE html>
 <html lang="en" class="loading">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./assets/logo/ebiko-logo.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="swiper.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <title>Ebiko Sushi & Takoyaki</title>
-  </head>
-  
-  <body>
-    <div class="loader-wrapper" id="loader-wrapper">
-      <video allowfullscreen="true" muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop" preload="metadata" id="loading">
-        <source src="./assets/loading/Intro.mp4" type="video/mp4">
-      </video>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./assets/logo/ebiko-logo.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="swiper.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Ebiko Sushi & Takoyaki</title>
+</head>
+
+<body>
+  <div class="loader-wrapper" id="loader-wrapper">
+    <video id="loading-animation" autoplay muted playsinline loading="lazy" preload="auto">
+      <source src="./assets/loading/intro.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="inner-nav">
+      <ul class="topleft-nav" id="nav1">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#about-us">Tentang Kami</a></li>
+      </ul>
+
+      <a href="#">
+        <div class="brand-logo">
+          <img src="./assets/logo/ebiko-logo.png" alt="logo ebiko" class="brand-logo" loading="lazy"/>
+        </div>
+      </a>
+
+      <ul class="topright-nav" id="nav2">
+        <li><a href="#best-seller">Menu Best Seller</a></li>
+        <li><a href="#">Paket Kemitraan</a></li>
+      </ul>
+
+      <div class="hamburger-menu">
+        <input type="checkbox" class="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="inner-nav">
-        <ul class="topleft-nav" id="nav1">
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#about-us">Tentang Kami</a></li>
-        </ul>
+  <!-- Welcome Text -->
+  <main>
+    <div class="container display-flex-reverse orange-bg">
+      <div class="welcome-text">
+        <h2>Welcome to!</h2>
+        <h1>Ebiko Sushi Dan Takoyaki</h1>
+        <P>Makanan khas jepang yang halal</P>
 
-        <a href="#">
-          <div class="brand-logo">
-            <img
-              src="./assets/logo/ebiko-logo.png"
-              alt="logo ebiko"
-              class="brand-logo"
-            />
-          </div>
+        <a href="https://wa.me/6287890902525?text=Hallo%20Admin%20Ebiko%2C%20Saya%20tertarik%20dengan%20Ebiko%20Sushi%20%26%20Takoyaki%2C%20saya%20tahu%20info%20ini%20dari%20Web.%0AIni%20data%20diri%20saya%20%0ANama%20%3A%20%0AKota%20%3A%0ATerimakasih"
+          target="_blank" class="whatsapp-btn">
+          Chat on Whatsapp
         </a>
 
-        <ul class="topright-nav" id="nav2">
-          <li><a href="#best-seller">Menu Best Seller</a></li>
-          <li><a href="#">Paket Kemitraan</a></li>
-        </ul>
-
-        <div class="hamburger-menu">
-          <input type="checkbox" class="checkbox"/>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
-    </nav>
 
-    <!-- Welcome Text -->
-    <main>
-      <div class="container display-flex-reverse orange-bg">
-        <div class="welcome-text">
-          <h2>Welcome to!</h2>
-          <h1>Ebiko Sushi Dan Takoyaki</h1>
-          <P>Makanan khas jepang yang halal</P>
-          
-          <a href="https://wa.me/6287890902525?text=Hallo%20Admin%20Ebiko%2C%20Saya%20tertarik%20dengan%20Ebiko%20Sushi%20%26%20Takoyaki%2C%20saya%20tahu%20info%20ini%20dari%20Web.%0AIni%20data%20diri%20saya%20%0ANama%20%3A%20%0AKota%20%3A%0ATerimakasih" target="_blank" class="whatsapp-btn">
-            Chat on Whatsapp
-          </a>
-          
-        </div>
-
-        <div class="welcome-img">
-          <img src="./assets/picture/takoyaki.png" alt="takoyaki">
-        </div>
-
-        </div>
+      <div class="welcome-img">
+        <img src="./assets/picture/takoyaki.webp" alt="takoyaki">
       </div>
-    </main>
 
-    <!-- About Us -->
-    <div id="about-us"  class="white-line"></div>
-    <div class="about-us-title">Tentang Kami</div>
-    <div class="white-line"></div>
-    <div class="container orange-bg">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-1.png" alt=""></div>
-          <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-2.png" alt=""></div>
-          <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-3.png" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-      <div class="about-us-sub">
-        Ebiko berdiri sejak Januari 2016, dalam sebuah kios yang terletak
-        di Alfamidi Karang Tengah, Jakarta Selatan.Berkat dukungan dari loyal
-        customer Ebiko, alhamdulillahkami telah berkembang menjadi sebuah 
-        One Stop Solution Virtual Resto
-      </div>
     </div>
-
-      <div class="container">
-      <div class="orange-card">
-        <div class="card-title">
-          <h1>Kenapa harus<br>Memilih Ini?</h1>
-        </div>
-        <div class="card-content">
-          <ol>
-            <li>MANAJEMEN YANG TERSTRUKTUR & BISNIS YANG SIAP
-              BEROPERASI</li>
-            <li>PRODUK SUDAH DIKENAL DAN MEMILIKI CIRI KHAS TERSENDIRI</li>
-            <li>MANAJEMEN PEMESANAN BAHAN BAKU DAN KEUANGAN
-              LEBIH MUDAH</li>
-          </ol>
-        </div>
-        <div class="footer-logo"><img src="./assets/logo/footer-logo.png" alt="footer-logo"></div>
-      </div>
     </div>
+  </main>
 
-    <div class="container orange-bg rounded-bottom-card">
+  <!-- About Us -->
+  <div id="about-us" class="white-line"></div>
+  <div class="about-us-title">Tentang Kami</div>
+  <div class="white-line"></div>
+  <div class="container orange-bg">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-1.webp" alt="" loading="lazy"></div>
+        <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-2.webp" alt="" loading="lazy"></div>
+        <div class="swiper-slide box-shadow"><img src="./assets/picture/slider_pic-3.webp" alt="" loading="lazy"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="about-us-sub">
+      Ebiko berdiri sejak Januari 2016, dalam sebuah kios yang terletak
+      di Alfamidi Karang Tengah, Jakarta Selatan.Berkat dukungan dari loyal
+      customer Ebiko, alhamdulillahkami telah berkembang menjadi sebuah
+      One Stop Solution Virtual Resto
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="orange-card">
+      <div class="card-title">
+        <h1>Kenapa harus<br>Memilih Ini?</h1>
+      </div>
       <div class="card-content">
-          <h1>Partnership</h1>
-          <p>Dalam Menjalankan bisnis   franchise, kami telah menjalin  kerjasama
-            dengan beberapa perusahaan   e-commarce</p>
-        <div class="img-wrapper">
-          <img src="./assets/logo/grabfood.png" alt="grabfood">
-          <img src="./assets/logo/gofood.png"   alt="gofood">
-          <img src="./assets/logo/shopee-food.png" alt="shopeefood">
-        </div>
-      </div>
-    </div>
-
-    <div id="best-seller" class="white-line"></div>
-    <div class="white-line"></div>
-    <div class="container redline-bg">
-      <img src="./assets/picture/best-seller.webp" alt="Best Seller" class="best-seller">
-      <div class="display-flex">
-        <img src="./assets/picture/okonomiyaki-seafood.webp" alt="okonomiyaki seafood">
-        <img src="./assets/picture/salmon-mentai.webp" alt="salmon mentai">
-        <img src="./assets/picture/takoyaki-gurita.webp" alt="takoyaki gurita">
-      </div>
-    </div>
-    <div class="white-line"></div>
-    <div class="white-line"></div>
-    <div class="orange-line"></div>
-
-    <div class="container">
-      <div class="card-title">
-        <h1>Konsep Dine-in</h1>
-      </div>
-      <div class="white-card">
-        <div class="display-flex">
-            <div class="tab-flex-reverse">
-              <div class="dine-in-concept-sub">
-                <h5>FULL Package</h5>
-                <div class="dine-in-concept-sub-flex">
-                  <ul>
-                    <li>Majoo POS System Software + Standing Barcket</li>
-                    <li>Web Order & Majoo Set Up</li>
-                    <li>Bahan Baku, Packaging, Set peralatan lengkap (Sushi, takoyaki, Okonomiyaki)</li>
-                    <li>Branding Outlet</li>
-                    <li>Free Pedaftaran Online App
-                      (Grabfood, Gofood, dan Shopeefood)</li>
-                    <li>Dokumentasi Video Opening & Edited Content</li>
-                    <li>Visit Lokasi & Training</li>
-                    <li>Buku Menu sebanyak 2 set</li>
-                    <li>Main Biliboard</li>
-                  </ul>
-                  <h4>45<span>Jt</span></h4>
-                </div>
-              </div>
-
-              <div class="swiper-2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./assets/picture/slider_pic-4.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/picture/slider_pic-5.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/picture/slider_pic-6.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/picture/slider_pic-7.png" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-            </div>
-          </div>
-
-        <div class="display-flex">
-          <div class="tab-flex-reverse">
-            <div class="dine-in-concept-sub">
-              <h5>Lite Package Sushi Only</h5>
-              <div class="dine-in-concept-sub-flex">
-                <ul>
-                  <li>Majoo POS System Software + Standing Barcket</li>
-                  <li>Web Order & Majoo Set Up</li>
-                  <li>Bahan Baku, Packaging, Set peralatan lengkap (Sushi Only)</li>
-                  <li>Branding Outlet</li>
-                  <li>Free Pedaftaran Online App
-                    (Grabfood, Gofood, dan Shopeefood)</li>
-                  <li>Dokumentasi Video Opening & Edited Content</li>
-                  <li>Visit Lokasi & Training</li>
-                  <li>Buku Menu sebanyak 2 set</li>
-                  <li>Main Biliboard</li>
-                </ul>
-                <h4>27<span>Jt</span></h4>
-              </div>
-            </div>
-
-            <div class="dine-in-concept-sub">
-              <h5>Lite Package Takoyaki dan okonomiyaki</h5>
-              <div class="dine-in-concept-sub-flex">
-                <ul>
-                  <li>Majoo POS System Software + Standing Barcket</li>
-                  <li>Web Order & Majoo Set Up</li>
-                  <li>Bahan Baku, Packaging, Set peralatan lengkap (Takoyaki dan Okonomiyaki)</li>
-                  <li>Branding Outlet</li>
-                  <li>Free Pedaftaran Online App
-                    (Grabfood, Gofood, dan Shopeefood)</li>
-                  <li>Dokumentasi Video Opening & Edited Content</li>
-                  <li>Visit Lokasi & Training</li>
-                  <li>Buku Menu sebanyak 2 set</li>
-                  <li>Main Biliboard</li>
-                </ul>
-                <h4>27<span>Jt</span></h4>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="card-title">
-        <h1>Konsep Booth</h1>
-      </div>
-      <div class="white-card">
-        <div class="concept-booth-1">
-          <div class="booth-1-img">
-            <img src="./assets/picture/booth-1.webp" alt="">
-          </div>
-
-          <div class="booth-1-sub">
-            <h2>PAKET GOLD</h2>
-            <ul>
-              <li>Booth Jati Belanda</li>
-              <li>Peralatan Siap Jual</li>
-              <li>Bahan Baku Takoyaki</li>
-              <li>Box Kemasan</li>
-              <li>SOP Pembuatan</li>
-              <li>Sarana Promosi</li>
-              <li>Seragam Karyawan</li>
-            </ul>
-            <div class="booth-1-sub-footer">
-              <p>Rp.10.000.000</p>
-              <h1>8<Span>Jt</Span></h1>
-            </div>
-          </div>
-        </div>
-        
-        <div class="concept-booth-2">
-          <div class="booth-1-sub">
-            <h2>PAKET PLATINUM</h2>
-            <ul>
-              <li>Booth Jati Belanda</li>
-              <li>Peralatan Siap Jual</li>
-              <li>Bahan Baku Tako dan Oko</li>
-              <li>Box Kemasan</li>
-              <li>SOP Pembuatan</li>
-              <li>Sarana Promosi</li>
-              <li>Seragam Karyawan</li>
-            </ul>
-            <div class="booth-2-sub-footer">
-              <h1>18<Span>Jt</Span></h1>
-              <p>Rp.20.000.000</p>
-            </div>
-          </div>
-          <div class="booth-1-img">
-            <img src="./assets/picture/booth-2.webp" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <main>
-      <div class="container orange-bg">
-        <div class="certificate-content">
-          <img src="./assets/picture/certificate.webp" alt="certificate" class="certificate">
-          <h1>Sertifikat Halal MUI</h1>
-        </div>
-      </div>
-    </main>
-    
-    <div class="white-line"></div>
-    <div class="container orange-bg">
-      <div class="container-title">
-        <h1>Syarat Menjadi Mitra <br>
-          Ebiko Sushi Dan Takoyaki</h1>
-      </div>
-      <div class="list-wrapper">
         <ol>
-          <div class="text-flex">
-            <li>Wajib membeli bahan baku (tepung premix takoyaki &
-              okonomiyaki,macam-macam saos) yang disediakan 
-              oleh Kantor Pusat</li>
-            <li>Bersedia mengikuti petunjuk dan pelatihan yang
-              diberikan oleh manajemen kantor pusat</li>
-          </div>
-
-          <div class="text-flex">
-            <li>Selama menjadi Mitra, manajemen Kantor Pusat
-              hanya meminjamkan Merk Dagang yaitu 
-              “Ebiko Sushi dan Takoyaki”</li>
-            <li>Dilarang membuka usaha sejenis dengan
-              Ebiko Sushi dan Takoyaki</li>
-          </div>
-          <div class="text-flex">
-            <li>Dilarang menjual menu lain atau produk tanpa
-              seizin Kantor Pusat</li>
-            <li>Dikelola langsung oleh partner, hanya akan ada
-              pembagian komisi Rp500/item</li>
-          </div>
+          <li>MANAJEMEN YANG TERSTRUKTUR & BISNIS YANG SIAP
+            BEROPERASI</li>
+          <li>PRODUK SUDAH DIKENAL DAN MEMILIKI CIRI KHAS TERSENDIRI</li>
+          <li>MANAJEMEN PEMESANAN BAHAN BAKU DAN KEUANGAN
+            LEBIH MUDAH</li>
         </ol>
       </div>
+      <div class="footer-logo"><img src="./assets/logo/footer-logo.png" alt="footer-logo" loading="lazy"></div>
     </div>
-    <script src="app.js" defer type="text/javascript"></script>
-  </body>
+  </div>
+
+  <div class="container orange-bg rounded-bottom-card">
+    <div class="card-content">
+      <h1>Partnership</h1>
+      <p>Dalam Menjalankan bisnis franchise, kami telah menjalin kerjasama
+        dengan beberapa perusahaan e-commarce</p>
+      <div class="img-wrapper">
+        <img src="./assets/logo/grabfood.webp" alt="grabfood">
+        <img src="./assets/logo/gofood.webp" alt="gofood">
+        <img src="./assets/logo/shopee-food.webp" alt="shopeefood">
+      </div>
+    </div>
+  </div>
+
+  <div id="best-seller" class="white-line"></div>
+  <div class="white-line"></div>
+  <div class="container redline-bg">
+    <img src="./assets/picture/best-seller.webp" alt="Best Seller" class="best-seller">
+    <div class="display-flex">
+      <img src="./assets/picture/okonomiyaki-seafood.webp" alt="okonomiyaki seafood" loading="lazy">
+      <img src="./assets/picture/salmon-mentai.webp" alt="salmon mentai" loading="lazy">
+      <img src="./assets/picture/takoyaki-gurita.webp" alt="takoyaki gurita" loading="lazy">
+    </div>
+  </div>
+  <div class="white-line"></div>
+  <div class="white-line"></div>
+  <div class="orange-line"></div>
+
+  <div class="container">
+    <div class="card-title">
+      <h1>Konsep Dine-in</h1>
+    </div>
+    <div class="white-card">
+      <div class="display-flex">
+        <div class="tab-flex-reverse">
+          <div class="dine-in-concept-sub">
+            <h5>FULL Package</h5>
+            <div class="dine-in-concept-sub-flex">
+              <ul>
+                <li>Majoo POS System Software + Standing Barcket</li>
+                <li>Web Order & Majoo Set Up</li>
+                <li>Bahan Baku, Packaging, Set peralatan lengkap (Sushi, takoyaki, Okonomiyaki)</li>
+                <li>Branding Outlet</li>
+                <li>Free Pedaftaran Online App
+                  (Grabfood, Gofood, dan Shopeefood)</li>
+                <li>Dokumentasi Video Opening & Edited Content</li>
+                <li>Visit Lokasi & Training</li>
+                <li>Buku Menu sebanyak 2 set</li>
+                <li>Main Biliboard</li>
+              </ul>
+              <h4>45<span>Jt</span></h4>
+            </div>
+          </div>
+
+          <div class="swiper-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/picture/slider_pic-4.webp" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./assets/picture/slider_pic-5.webp" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./assets/picture/slider_pic-6.webp" alt="" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./assets/picture/slider_pic-7.webp" alt="" loading="lazy"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="display-flex">
+        <div class="tab-flex-reverse">
+          <div class="dine-in-concept-sub">
+            <h5>Lite Package Sushi Only</h5>
+            <div class="dine-in-concept-sub-flex">
+              <ul>
+                <li>Majoo POS System Software + Standing Barcket</li>
+                <li>Web Order & Majoo Set Up</li>
+                <li>Bahan Baku, Packaging, Set peralatan lengkap (Sushi Only)</li>
+                <li>Branding Outlet</li>
+                <li>Free Pedaftaran Online App
+                  (Grabfood, Gofood, dan Shopeefood)</li>
+                <li>Dokumentasi Video Opening & Edited Content</li>
+                <li>Visit Lokasi & Training</li>
+                <li>Buku Menu sebanyak 2 set</li>
+                <li>Main Biliboard</li>
+              </ul>
+              <h4>27<span>Jt</span></h4>
+            </div>
+          </div>
+
+          <div class="dine-in-concept-sub">
+            <h5>Lite Package Takoyaki dan okonomiyaki</h5>
+            <div class="dine-in-concept-sub-flex">
+              <ul>
+                <li>Majoo POS System Software + Standing Barcket</li>
+                <li>Web Order & Majoo Set Up</li>
+                <li>Bahan Baku, Packaging, Set peralatan lengkap (Takoyaki dan Okonomiyaki)</li>
+                <li>Branding Outlet</li>
+                <li>Free Pedaftaran Online App
+                  (Grabfood, Gofood, dan Shopeefood)</li>
+                <li>Dokumentasi Video Opening & Edited Content</li>
+                <li>Visit Lokasi & Training</li>
+                <li>Buku Menu sebanyak 2 set</li>
+                <li>Main Biliboard</li>
+              </ul>
+              <h4>27<span>Jt</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card-title">
+      <h1>Konsep Booth</h1>
+    </div>
+    <div class="white-card">
+      <div class="concept-booth-1">
+        <div class="booth-1-img">
+          <img src="./assets/picture/booth-1.webp" alt="" loading="lazy">
+        </div>
+
+        <div class="booth-1-sub">
+          <h2>PAKET GOLD</h2>
+          <ul>
+            <li>Booth Jati Belanda</li>
+            <li>Peralatan Siap Jual</li>
+            <li>Bahan Baku Takoyaki</li>
+            <li>Box Kemasan</li>
+            <li>SOP Pembuatan</li>
+            <li>Sarana Promosi</li>
+            <li>Seragam Karyawan</li>
+          </ul>
+          <div class="booth-1-sub-footer">
+            <p>Rp.10.000.000</p>
+            <h1>8<Span>Jt</Span></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="concept-booth-2">
+        <div class="booth-1-sub">
+          <h2>PAKET PLATINUM</h2>
+          <ul>
+            <li>Booth Jati Belanda</li>
+            <li>Peralatan Siap Jual</li>
+            <li>Bahan Baku Tako dan Oko</li>
+            <li>Box Kemasan</li>
+            <li>SOP Pembuatan</li>
+            <li>Sarana Promosi</li>
+            <li>Seragam Karyawan</li>
+          </ul>
+          <div class="booth-2-sub-footer">
+            <h1>18<Span>Jt</Span></h1>
+            <p>Rp.20.000.000</p>
+          </div>
+        </div>
+        <div class="booth-1-img">
+          <img src="./assets/picture/booth-2.webp" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container orange-bg">
+      <div class="certificate-content">
+        <img src="./assets/picture/certificate.webp" alt="certificate" class="certificate" loading="lazy">
+        <h1>Sertifikat Halal MUI</h1>
+      </div>
+    </div>
+  </main>
+
+  <div class="white-line"></div>
+  <div class="container orange-bg">
+    <div class="container-title">
+      <h1>Syarat Menjadi Mitra <br>
+        Ebiko Sushi Dan Takoyaki</h1>
+    </div>
+    <div class="list-wrapper">
+      <ol>
+        <div class="text-flex">
+          <li>Wajib membeli bahan baku (tepung premix takoyaki &
+            okonomiyaki,macam-macam saos) yang disediakan
+            oleh Kantor Pusat</li>
+          <li>Bersedia mengikuti petunjuk dan pelatihan yang
+            diberikan oleh manajemen kantor pusat</li>
+        </div>
+
+        <div class="text-flex">
+          <li>Selama menjadi Mitra, manajemen Kantor Pusat
+            hanya meminjamkan Merk Dagang yaitu
+            “Ebiko Sushi dan Takoyaki”</li>
+          <li>Dilarang membuka usaha sejenis dengan
+            Ebiko Sushi dan Takoyaki</li>
+        </div>
+        <div class="text-flex">
+          <li>Dilarang menjual menu lain atau produk tanpa
+            seizin Kantor Pusat</li>
+          <li>Dikelola langsung oleh partner, hanya akan ada
+            pembagian komisi Rp500/item</li>
+        </div>
+      </ol>
+    </div>
+  </div>
+  <script src="app.js" defer type="text/javascript"></script>
+</body>
+
 </html>
