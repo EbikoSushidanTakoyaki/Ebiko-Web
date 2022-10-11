@@ -14,7 +14,7 @@ function init() {
 
       setTimeout(() => {
         loading.remove();
-      }, 200);
+      }, 500);
     });
   };
 }
