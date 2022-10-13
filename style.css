@@ -533,6 +533,7 @@ main {
 
 .certificate-content img:hover {
   width: 52%;
+  margin: -20px;
 }
 
 /* End of certificate */
@@ -595,12 +596,12 @@ ol {
 /* Rules */
 .display-flex-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex;
   flex-flow: row wrap;
 }
 
-.text-flex-reverse {
+.text-wrapper {
   margin: 2vw auto;
   width: 250px;
   text-align: left;
@@ -608,13 +609,13 @@ ol {
   justify-content: center;
 }
 
-.text-flex-reverse img {
+.text-wrapper img {
   max-width: 100%;
   width: 100px;
   margin-right: 1vw;
 }
 
-.text-flex-reverse li {
+.text-wrapper li {
   width: 50%;
   display: flex;
   flex-direction: row-reverse;
@@ -624,7 +625,7 @@ ol {
   font-size: 1rem;
 }
 
-.text-flex-reverse li::before {
+.text-wrapper li::before {
   font-size: 3rem;
   width: 1rem;
   padding-right: 8vw;
@@ -635,7 +636,7 @@ ol {
 
 /* maps */
 .map-container {
-  padding-bottom: 2vw;
+  padding-bottom: 4vw;
 }
 
 #map {
@@ -644,6 +645,38 @@ ol {
   margin: 0 auto;
 }
 /* End of maps */
+
+/* Bottom Nav */
+.bottom-navbar {
+  background-color: #ffffff;
+  margin-top: 5vw;
+}
+
+.nav-title {
+  color: var(--nav-text-color);
+  margin: 0 auto;
+  font-size: 1.5vw;
+}
+
+.bottom-nav-contents {
+  margin: 0 auto;
+  padding-bottom: 2vw;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+}
+.bottom-nav-contents > a > img {
+  max-width: 5vw;
+  width: 50px;
+}
+.bottom-nav-contents > a > img:hover {
+  max-width: 6vw;
+  width: 60px;
+  margin: -5px;
+}
+/* End of Bottom Nav */
 
 /* @@@@@ Tablet @@@@@ */
 @media only screen and (max-width: 834px) {
@@ -903,10 +936,16 @@ ol {
   /* End of Requirement */
 
   /* Rules */
-  .text-flex-reverse {
+  .text-wrapper {
     padding-left: 5vw;
   }
   /* End of Rules */
+
+  /* bottom nav */
+  .nav-title {
+    font-size: 2vw;
+  }
+  /* End of bottom nav */
 }
 
 /* @@@@@ Mobile @@@@@ */
@@ -1179,21 +1218,21 @@ ol {
     align-items: center;
   }
 
-  .text-flex-reverse {
+  .text-wrapper {
     margin: 2vw auto;
     width: 40%;
     /* border: 2px solid black; */
   }
 
-  .text-flex-reverse img {
+  .text-wrapper img {
     width: 60%;
   }
 
-  .text-flex-reverse li::before {
+  .text-wrapper li::before {
     font-size: 1.5rem;
   }
 
-  .text-flex-reverse p {
+  .text-wrapper p {
     font-size: 2.5vw;
   }
 
@@ -1210,4 +1249,8 @@ ol {
     margin: 0 auto;
   }
   /* End of maps */
+
+  /* bottom nav */
+
+  /* End of bottom nav */
 }
