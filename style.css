@@ -670,11 +670,12 @@ ol {
 .bottom-nav-contents > a > img {
   max-width: 5vw;
   width: 50px;
-}
-.bottom-nav-contents > a > img:hover {
-  max-width: 6vw;
-  width: 60px;
   margin: -5px;
+  transition: all 0.5s ease;
+}
+
+.bottom-nav-contents > a > img:hover {
+  transform: scale(1.2);
 }
 /* End of Bottom Nav */
 
