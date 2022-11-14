@@ -134,7 +134,7 @@ var map = L.map("map", {
   attributionControl: false,
   dragging: pc,
   tap: pc,
-}).setView([-6.299548, 106.751261], 11);
+}).setView([-6.272138365409867, 106.74423715479242], 11);
 
 var googleStreets = L.tileLayer(
   "http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}",
